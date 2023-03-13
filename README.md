@@ -1,4 +1,4 @@
-# Тесты на сайт ["edujira"](https://edujira.ifellow.ru/)
+# Тесты сайта ["edujira"](https://edujira.ifellow.ru/)
 ##
 ***
 1. Создайте отдельную директорию на локальном компьютере
