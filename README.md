@@ -2,13 +2,18 @@
 ##
 ***
 1. Создайте отдельную директорию на локальном компьютере
-2. Необходима java JDK 8
-3. Скачайте все файлы которые расположены в [директории](https://github.com/AlexnovichAS/web.git) <br>
+2. Установить JVM
+3. Необходима java JDK 8
+4. Установить apache-maven-3.8.1
+5. Скачайте все файлы которые расположены в [директории](https://github.com/AlexnovichAS/web.git) <br>
    git clone https://github.com/AlexnovichAS/web.git
-4. Установить Allure
-5. Откройте проект
-6. Установить все библиотеки из файла pom.xml
-7. Запустите все тесты mvn clean test
+6. Установить Allure
+7. Откройте проект
+8. Установить все библиотеки из файла pom.xml
+9. Запустите все тесты mvn clean test
+10. Введите команду mvn allure:install
+11. Сформируйте отчет Allure mvn allure:serve
+12. В проекте используется maven-surefire-plugin версия 2.22.2
 
 ## Описание проекта
 ***
