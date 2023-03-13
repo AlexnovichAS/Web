@@ -42,8 +42,8 @@ public class JiraTests extends WebHooks {
         clickButtonOptions("Все задачи");
         findInFilter("Задача", "TestSelenium");
         checkNameTaskInTask("TestSelenium");
-        checkTaskDetailsInTask("Статус", "В работе");
-        checkTaskDetailsInTask("Исправить в версия", "Version 2.0");
+        checkTaskDetailsInTask("Статус", "Готово");
+        checkTaskDetailsInTask("Исправить в версиях", "Version 2.0");
     }
 
     @Test
@@ -61,7 +61,8 @@ public class JiraTests extends WebHooks {
         completeRequiredFieldTask("Исполнитель", "n215401@yandex.ru");
         completeRequiredFieldTask("Спринт", "Спринт 1");
         createTask();
-        goLeftPanelSections("Задачи");
+        clickButton("Переключить фильтр");
+        clickButtonOptions("Все задачи");
         findInFilter("Ошибка", "Не работает кнопка оплаты на главной странице при ее нажатии");
         checkNameTaskInFilter("Не работает кнопка оплаты на главной странице при ее нажатии");
         checkTaskDetailsInFilter("Статус", "Сделать");

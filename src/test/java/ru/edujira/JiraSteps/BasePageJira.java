@@ -55,7 +55,7 @@ public abstract class BasePageJira {
         switchTo().parentFrame();
     }
 
-    @Step("Клик по кнопке: {nameOptions} в окне 'Создание задачи'")
+    @Step("Клик по кнопке: 'Создать' в окне 'Создание задачи'")
     public static void createTask() {
         buttonCreate.should(exist).shouldBe(visible, Duration.ofSeconds(10)).click();
     }
