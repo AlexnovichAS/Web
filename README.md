@@ -1,3 +1,11 @@
+</h2>
+
+[![made-with-java](https://img.shields.io/badge/Java-8-ff0000.svg)](https://www.java.com/)
+[![made-with-java](https://img.shields.io/badge/Maven-3.8.1-2626ae.svg)](https://downloads.apache.org)
+[![made-with-java](https://img.shields.io/badge/JUnit5-5.7.0-cd4848.svg)](https://junit.org/)
+[![made-with-java](https://img.shields.io/badge/Selenide-5.18.0-green.svg)](https://ru.selenide.org/)
+
+
 # Тесты сайта ["edujira"](https://edujira.ifellow.ru/)
 ##
 ***

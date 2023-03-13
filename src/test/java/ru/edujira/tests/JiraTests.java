@@ -20,7 +20,7 @@ public class JiraTests extends WebHooks {
     @Test
     @DisplayName("Проверить общее количество заведенных задач в проекте")
     @Description("Проверяет общее количество заведенных задач в проекте")
-    public void loginTest() {
+    public void checkNumberTasksTest() {
         goProject("Проекты", "Test (TEST)");
         goLeftPanelSections("Задачи");
         clickButton("Переключить фильтр");
