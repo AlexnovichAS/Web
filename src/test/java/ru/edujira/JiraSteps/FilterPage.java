@@ -6,15 +6,26 @@ import org.junit.jupiter.api.Assertions;
 
 import java.time.Duration;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.exist;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selenide.sleep;
 import static ru.edujira.PageElements.FilterPageElements.*;
+import static ru.edujira.PageElements.TaskPageElements.taskDetails;
 
 public class FilterPage {
 
     @Step("Проверка значения: '{result}', у свойства '{name}' в деталях задачи")
     public static void checkTaskDetailsInFilter(String name, String result) {
+        int i = 0;
+        while (i <= 15) {
+            if (taskDetails(name).getText().toLowerCase().trim().equals(result)) {
+                break;
+            } else {
+                sleep(100);
+                i++;
+            }
+        }
         String detailsResult = taskDetails(name)
-                .waitUntil(exactText(result), 10000)
                 .should(exist, Duration.ofSeconds(10))
                 .getText().toLowerCase().trim();
         Assertions.assertEquals(result.toLowerCase(), detailsResult,
